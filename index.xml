@@ -6,7 +6,79 @@
         <description>Recent content on JLer</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 16 Feb 2022 15:08:50 +0800</lastBuildDate><atom:link href="https://jlerxky.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 16 Feb 2022 17:38:14 +0800</lastBuildDate><atom:link href="https://jlerxky.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test</title>
+        <link>https://jlerxky.github.io/p/test/</link>
+        <pubDate>Wed, 16 Feb 2022 17:38:14 +0800</pubDate>
+        
+        <guid>https://jlerxky.github.io/p/test/</guid>
+        <description>&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; WAL 测试文档&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 周二分享会&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wal-测试文档&#34;&gt;WAL 测试文档&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;用例标题&lt;/th&gt;
+&lt;th&gt;所属产品&lt;/th&gt;
+&lt;th&gt;所属服务&lt;/th&gt;
+&lt;th&gt;相关需求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;controller WAL 功能测试&lt;/td&gt;
+&lt;td&gt;CITA-CLOUD&lt;/td&gt;
+&lt;td&gt;controller&lt;/td&gt;
+&lt;td&gt;出块事务性保障&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;测试步骤&#34;&gt;测试步骤&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;步骤&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;预期&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;实际情况&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1. 初始化链并启动&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;正常出块&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2. 多次重启链&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;重启成功并正常出块（wal不影响正常出块）&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;3. 在 finalize_block 中（wal写入后、执行exec_block与落库前）注入错误使出块事务中断&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;模拟controller意外退出，出块过程中，新块经过共识但在落库前中断的情况&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;4. 重启 controller 或 重启链&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;未经落库的块继续落库，并继续正常出块&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;5. 多次重启链&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;重启成功并正常出块（wal不影响redo之后的正常出块）&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;quic-解析客户端标识&#34;&gt;QUIC 解析客户端标识&lt;/h3&gt;
+</description>
+        </item>
+        <item>
         <title>My First Post</title>
         <link>https://jlerxky.github.io/p/my-first-post/</link>
         <pubDate>Wed, 16 Feb 2022 15:08:50 +0800</pubDate>

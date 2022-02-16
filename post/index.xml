@@ -6,7 +6,16 @@
     <description>Recent content in Posts on JLer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 16 Feb 2022 15:08:50 +0800</lastBuildDate><atom:link href="https://jlerxky.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Feb 2022 17:38:14 +0800</lastBuildDate><atom:link href="https://jlerxky.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://jlerxky.github.io/p/test/</link>
+      <pubDate>Wed, 16 Feb 2022 17:38:14 +0800</pubDate>
+      
+      <guid>https://jlerxky.github.io/p/test/</guid>
+      <description>TODO  WAL 测试文档 周二分享会  WAL 测试文档     用例标题 所属产品 所属服务 相关需求     controller WAL 功能测试 CITA-CLOUD controller 出块事务性保障    测试步骤    步骤 预期 实际情况     1. 初始化链并启动 正常出块 S   2. 多次重启链 重启成功并正常出块（wal不影响正常出块） S   3. 在 finalize_block 中（wal写入后、执行exec_block与落库前）注入错误使出块事务中断 模拟controller意外退出，出块过程中，新块经过共识但在落库前中断的情况 S   4. 重启 controller 或 重启链 未经落库的块继续落库，并继续正常出块 S   5. 多次重启链 重启成功并正常出块（wal不影响redo之后的正常出块） S     QUIC 解析客户端标识 </description>
+    </item>
+    
     <item>
       <title>My First Post</title>
       <link>https://jlerxky.github.io/p/my-first-post/</link>
